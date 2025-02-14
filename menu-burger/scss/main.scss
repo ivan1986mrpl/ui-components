@@ -1,0 +1,24 @@
+@use 'normalize';
+@use 'blocks/header';
+
+body.lock {
+    overflow: hidden;
+}
+section,
+footer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    height: 15vw;
+    background-color: gray;
+}  
+section:nth-child(even) {
+    background-color: #f15412;
+}  
+section:nth-child(odd) {
+    background-color: #34b3f1;
+}
+  
