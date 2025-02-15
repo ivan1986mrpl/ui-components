@@ -1,0 +1,1 @@
+getting today's date and displaying it on a page in Russian or English (HTML and JavaScript)

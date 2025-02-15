@@ -16,3 +16,6 @@
 
 3) МЕНЮ БУРГЕР И ПЛАВНЫЙ СКРОЛЛ К ЯКОРЯМ
 - https://ivan1986mrpl.github.io/ui-components/menu-burger/
+
+4) ДОБАВЛЕНИЕ ТЕКУЩЕЙ ДАТЫ НА СТРАНИЦУ С ОБНОВЛЕНИЕМ БЛОКА КАЖДУЮ СЕКУНДУ AddDate
+- https://ivan1986mrpl.github.io/ui-components/AddDate/
