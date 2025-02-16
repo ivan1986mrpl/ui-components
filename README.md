@@ -19,3 +19,6 @@
 
 4) ДОБАВЛЕНИЕ ТЕКУЩЕЙ ДАТЫ НА СТРАНИЦУ С ОБНОВЛЕНИЕМ БЛОКА КАЖДУЮ СЕКУНДУ AddDate
 - https://ivan1986mrpl.github.io/ui-components/AddDate/
+
+5) HOVER ДЛЯ ССЫЛОК С РАСПОЗНАВАНИЕМ ОТКУДА ПРИШЕЛ КУРСОР
+- https://ivan1986mrpl.github.io/ui-components/menu-hover/
