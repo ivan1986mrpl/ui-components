@@ -22,3 +22,6 @@
 
 5) HOVER ДЛЯ ССЫЛОК С РАСПОЗНАВАНИЕМ ОТКУДА ПРИШЕЛ КУРСОР
 - https://ivan1986mrpl.github.io/ui-components/menu-hover/
+
+6) go to top button with scroll indicator and smooth scrolling to the top
+- https://ivan1986mrpl.github.io/ui-components/go-to-top-button/
