@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get Day and get Month</title>
+</head>
+
+<body>
+    <div class="day"></div>
+    <div class="month"></div>
+
+    <script>
+
+        function gettingDay() {
+        let day;
+        if (document.documentElement.lang === 'ru') {//получение html lahg
+            const days = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];	
+            day = days[new Date().getDay() - 1]
+        } else {
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];	
+            day = days[new Date().getDay()]
+        }
+        document.querySelector('.day').innerHTML = day;
+        //return day;	
+        }
+        gettingDay();
+
+
+        function gettingMonth() {
+            let month;
+
+            if (document.documentElement.lang === 'ru') {
+                const months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Май', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];	
+                month = months[new Date().getMonth()];
+            } else {
+                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];	
+                month = months[new Date().getMonth()];
+            }	
+            document.querySelector('.month').innerHTML = month;
+            //return month;
+        }
+        gettingMonth();
+
+    </script>
+</body>
+
+</html>

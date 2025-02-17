@@ -25,3 +25,6 @@
 
 6) go to top button with scroll indicator and smooth scrolling to the top
 - https://ivan1986mrpl.github.io/ui-components/go-to-top-button/
+
+7) getDay and getMonth 
+- https://ivan1986mrpl.github.io/ui-components/getDay and getMonth/
