@@ -1,0 +1,22 @@
+.hover-link {
+    position: relative;
+    transition: all 0.4s ease 0s;
+    &::after{
+        content:'';
+        position: absolute;
+        bottom: toRem(-3);
+        left: 0;
+        width: 0;
+        height: toRem(2);
+        transition: width 0.3s ease 0s;
+        background-color: $linkHoverBackground;        
+    }
+    @media (any-hover: hover){
+        &:hover{
+            color: $linkHoverColor;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

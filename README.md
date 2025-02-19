@@ -27,4 +27,23 @@
 - https://ivan1986mrpl.github.io/ui-components/go-to-top-button/
 
 7) getDay and getMonth 
-- https://ivan1986mrpl.github.io/ui-components/getDay and getMonth/
+- https://ivan1986mrpl.github.io/ui-components/getDay_and_getMonth/
+
+8) POPUP
+- https://ivan1986mrpl.github.io/ui-components/popup/
+
+
+
+- feat - используется при добавлении новой функциональности.
+
+- fix - исправление багов.
+
+- refactor - изменения кода, которые не исправляет баги и не добавляют функционал.
+
+- chore - изменение конфигов, системы сборки, обновление зависимостей и т.д.
+
+- test - всё, что связано с тестированием.
+
+- style - исправление опечаток, изменение форматирования кода (переносы, отступы, точки с запятой и т.п.) без изменения смысла кода.
+
+- docs - изменения только в документации.

@@ -1,0 +1,60 @@
+@use "sass:math";
+@import "base/mixins";
+@import url('https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap');
+$fontFamily: "Inter";
+$fontSize: toRem(16);
+$mainColor: #000;
+$secondColor: #51595f;
+// не переименовывать
+$linkHoverBackground: rgb(218, 36, 36);// для класса link-hover 
+$linkHoverColor: rgb(218, 36, 36);// для класса link-hover
+$headerContainerHeigthBig: 110; //для высоты подложки безопасности, чтобы пункты меню не налазили на логотип, а появлялась прокрутка
+$headerContainerHeigthSmall: 60;//для высоты подложки безопасности, чтобы пункты меню не налазили на логотип, а появлялась прокрутка 
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1440;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1200;//указывать реальный размер с макета
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+// Брейк-поїнти
+$pc: toEm($containerWidth);
+$tablet: toEm(991.98);
+$mobile: toEm(767.98);
+$mobileSmall: toEm(479.98);
+
+@import "base/null";
+@import 'base/setting';
+@import 'base';
+
+//тестовые стили, удалить
+body {
+    height: 1200px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #51595f;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.content {
+    &__image {
+        width: 450px;
+        height: 450px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
