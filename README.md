@@ -32,6 +32,9 @@
 8) POPUP
 - https://ivan1986mrpl.github.io/ui-components/popup/
 
+9) tabs
+- https://ivan1986mrpl.github.io/ui-components/tabs/
+
 
 
 - feat - используется при добавлении новой функциональности.
