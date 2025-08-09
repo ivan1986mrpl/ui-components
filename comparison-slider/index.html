@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparison slider</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="slider-comparison">
+            <img src="img/after.webp" alt="after image"
+                class="slider-comparison__img slider-comparison__img--after" loading="lazy">
+            <img src="img/before.webp" alt="before image"
+                class="slider-comparison__img slider-comparison__img--before" loading="lazy"
+                style="clip-path: polygon(0px 0px, 63% 0px, 63% 100%, 0px 100%);">
+            <div class="slider-comparison__line-top" style="left: 63%;"></div>
+            <div class="slider-comparison__line-bottom" style="left: 63%;"></div>
+            <div class="slider-comparison__circle" style="left: 63%;"></div>
+            <input class="slider-comparison__input" type="range" min="0" max="100" value="61">
+        </div>
+
+    </div>
+</body>
+
+</html>

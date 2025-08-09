@@ -35,6 +35,9 @@
 9) tabs
 - https://ivan1986mrpl.github.io/ui-components/tabs/
 
+10) Slider comparison images
+- https://ivan1986mrpl.github.io/ui-components/comparison-slider/
+
 
 
 - feat - используется при добавлении новой функциональности.
