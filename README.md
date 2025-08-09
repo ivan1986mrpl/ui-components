@@ -38,6 +38,9 @@
 10) Slider comparison images
 - https://ivan1986mrpl.github.io/ui-components/comparison-slider/
 
+11) Video player
+- https://ivan1986mrpl.github.io/ui-components/video-player/
+
 
 
 - feat - используется при добавлении новой функциональности.

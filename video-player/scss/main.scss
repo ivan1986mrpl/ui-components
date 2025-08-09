@@ -1,0 +1,187 @@
+@use 'normalize';
+
+
+.main-player {
+  margin: 50px auto;
+  width: 800px;
+
+
+  position: relative;
+  &__wrapper {
+    position: relative;
+    aspect-ratio: 1440 / 650;
+    overflow: hidden;
+	}
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__setting {
+    background-color: #000;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+    @media (max-width: 1024px){
+      padding: 15px 30px;
+    }
+    @media (max-width: 768px){
+      padding: 15px 25px 10px 25px;
+      position: relative;
+    }
+  }
+
+  &__play-btn {
+    width: 23px;
+    height: 31px;
+    background: url('../img/play.svg') center / cover no-repeat;
+    &.pause {
+      background: url('../img/pause.svg') center / cover no-repeat;
+    }
+  }
+
+  &__big-btn {
+    background: url('../img/main-play.svg') center / cover no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    height: 220px;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: block;
+    @media (max-width: 1024px){
+       width: 150px;
+       height: 150px; 
+    }
+    @media (max-width: 768px){
+       width: 80px;
+       height: 80px;       
+    }
+  }
+
+  &__mute {
+    width: 38px;
+    height: 31px;
+    background: url('../img/volume.svg') center / cover no-repeat;
+    &.muted {
+      background: url('../img/mute.svg') center / cover no-repeat;
+    }
+    @media (max-width: 1024px){
+      width: 26px;
+      height: 20px; 
+    }
+  }
+
+  &__fullscreen {
+    width: 36px;
+    height: 36px;
+    background: url('../img/fullscreen.svg') center / cover no-repeat;
+    @media (max-width: 1024px){
+       width: 26px;
+       height: 26px; 
+    }
+  }
+
+  &__fullscreen-exit {
+    width: 36px;
+    height: 36px;
+    background: url('../img/fullscreen_exit.svg') center / cover no-repeat;
+    @media (max-width: 1024px){
+       width: 26px;
+       height: 26px; 
+    }
+  }
+
+  &__progress,
+  &__volume {
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background: #C4C4C4;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  &__progress::-webkit-slider-thumb,
+  &__volume::-webkit-slider-thumb {
+    border-radius: 50px;
+    width: 13px;
+    height: 13px;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #fff;
+  }
+  &__progress {
+    width: 63%;
+    @media (max-width: 768px){
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+    }
+  }
+
+  &__volume {
+    width: 11%;
+    @media (max-width: 768px){
+      width: 80%;
+    }
+  }
+
+  &__speed {
+    position: absolute;
+    bottom: 90%;
+    right: 20px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+}
+
+/* 
+<div class="main-player">
+  <div class="main-player__wrapper">
+    <video class="main-player__video" preload="none">
+      <source src="assets/video/video0.mp4" type="video/mp4">
+      <source src="assets/video/video0.webm" type="video/webm">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <img class="main-player__preloader" src="assets/video/poster0.webp" alt="Loading" loading="lazy">
+    <button class="main-player__big-btn"></button>
+  </div>
+  <div class="main-player__setting" id="setting">
+    <button class="main-player__play-btn"></button>
+    <input class="main-player__progress" type="range" value="0" step="0.1" min="0" max="100">
+    <button class="main-player__mute"></button>
+    <input class="main-player__volume" type="range" min="0" max="1" step="0.01" value="0.4">
+    <button class="main-player__fullscreen"></button>
+  </div>
+  <div class="main-player__speed">1x</div>
+</div>
+*/
+
+  

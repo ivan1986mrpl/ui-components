@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video player</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="main-player">
+      <div class="main-player__wrapper">
+        <video class="main-player__video" preload="none">
+          <source src="img/video0.mp4" type="video/mp4">
+          <source src="img/video0.webm" type="video/webm">
+          Ваш браузер не поддерживает видео.
+        </video>
+        <img class="main-player__preloader" src="img/poster0.webp" alt="Loading" loading="lazy">
+        <button class="main-player__big-btn"></button>
+      </div>
+      <div class="main-player__setting" id="setting">
+        <button class="main-player__play-btn"></button>
+        <input class="main-player__progress" type="range" value="0" step="0.1" min="0" max="100">
+        <button class="main-player__mute"></button>
+        <input class="main-player__volume" type="range" min="0" max="1" step="0.01" value="0.4">
+        <button class="main-player__fullscreen"></button>
+      </div>
+      <div class="main-player__speed">1x</div>
+    </div>
+
+  </div>
+</body>
+
+</html>
